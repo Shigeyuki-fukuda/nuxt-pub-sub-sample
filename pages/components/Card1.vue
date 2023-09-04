@@ -5,7 +5,7 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { useModalDisplayEvent } from '~/composables/events/modal-display';
+import { useModalDisplayEvent } from '../../composables/events/modal-display';
 
 const { dispatch } = useModalDisplayEvent();
 const displayModal = (): void => {
