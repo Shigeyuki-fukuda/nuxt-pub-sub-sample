@@ -7,19 +7,7 @@ export default {
 <script setup lang="ts">
 import Card1 from "./components/Card1.vue";
 import Card2 from "./components/Card2.vue";
-import { useModalDisplayEvent } from '../composables/events/modal-display';
-
-const modalVisible = ref(false);
-const { on } = useModalDisplayEvent();
-on((event) => {
-  if (event.action === "OPEN_MODAL") {
-    modalVisible.value = true;
-  }
-
-  if (event.action === "CLOSE_MODAL") {
-    modalVisible.value = false;
-  }
-});
+import Modal from "../components/Modal.vue"
 </script>
 
 <template>
@@ -27,4 +15,5 @@ on((event) => {
     <Card1 />
     <Card2 />
   </div>
+  <Modal />
 </template>
