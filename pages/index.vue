@@ -5,8 +5,8 @@ export default {
 </script>
 
 <script setup lang="ts">
-import Card1 from "./components/Card1.vue";
-import Card2 from "./components/Card2.vue";
+import Card1 from "./page_components/Card1.vue";
+import Card2 from "./page_components/Card2.vue";
 import Modal from "../components/Modal.vue"
 </script>
 
